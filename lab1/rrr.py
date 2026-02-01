@@ -1,1 +1,5 @@
-print(0+1)
+print("hello world")
+if 2>5:
+    print("ss")
+else:
+    print("aa")
