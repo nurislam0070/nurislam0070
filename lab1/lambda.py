@@ -1,46 +1,47 @@
-from datetime import datetime, timedelta
-import re
-import math
+# n = int(input())
+# s = list(map(int, input().split()))
+# ss=0
+# for i in range(n):
+#     if s[i] % 2==0:
+#         ss += 1
+# print(ss)
 
-def parse(line):
-    # Пример строки: "2000-02-29 UTC+06:00"
-    m = re.match(r'(\d{4})-(\d{2})-(\d{2}) UTC([+-])(\d{2}):(\d{2})', line)
-    y, mo, d, sign, hh, mm = m.groups()
-    dt = datetime(int(y), int(mo), int(d))
-    offset = timedelta(hours=int(hh), minutes=int(mm))
-    
-    if sign == '+':
-        utc = dt - offset
-        tz = offset
-    else:
-        utc = dt + offset
-        tz = -offset
-    return dt, utc, tz
+# n = int(input())
+# words = input().split()
 
-# Ввод даты рождения и текущей даты
-birth_local, _, birth_tz = parse(input().strip())
-_, current_utc, _ = parse(input().strip())
+# for i, w in enumerate(words):
+#     print(f"{i}:{w}", end=" ")
 
-bmo, bd = birth_local.month, birth_local.day
+# s = input()
+# aa = set("aeuioAEUIO")
+# if any(n in aa for n in s):
+#     print("Yes")
+# else:
+#     print("No")
 
-def is_leap(y):
-    return y % 4 == 0 and (y % 100 != 0 or y % 400 == 0)
+# n = int(input())
+# s = list(map(int, input().split()))
+# print("Yes" if all(x >=0 for x in s) else "No")
 
-def make_bday(y):
-    d = bd
-    # если 29 февраля в невисокосный год → переносим на 28 февраля
-    if bmo == 2 and bd == 29 and not is_leap(y):
-        d = 28
-    local = datetime(y, bmo, d)
-    return local - birth_tz  # переводим в UTC
+# n = int(input())
+# s = input().split()
+# print(max(s, key=len))
 
-cy = current_utc.year
+# n = int(input())
+# nums = map(int, input().split())
 
-# ищем первый день рождения UTC >= current_utc
-for y in [cy, cy+1]:
-    b_utc = make_bday(y)
-    if b_utc >= current_utc:
-        diff_seconds = (b_utc - current_utc).total_seconds()
-        diff_days = math.ceil(diff_seconds / 86400)  # округляем до целых дней
-        print(diff_days)
-        break
+# distinct_sorted = sorted(set(nums))
+# print(*distinct_sorted)
+
+# n = int(input())
+# keys = input().split()
+# values = input().split()
+# query = input()
+
+# d = dict(zip(keys, values))
+# print(d.get(query, "Not found"))
+
+n = int(input())
+nums = map(int, input().split())
+
+print(sum(map(bool, nums)))
