@@ -1,24 +1,40 @@
-def my_function():
-  print("Hello from a function")
-my_function()
-def my_function():
-    pass
+import pygame
+
+pygame.init()
+
+screen = pygame.display.set_mode((800, 600))
+pygame.display.set_caption("GG")
+red = (0, 0, 255)
+running = True
+
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+    screen.fill((0, 0, 0))      
+    pygame.display.update()     
+
+pygame.quit()
 
 
-def get_greeting():
-  return "Hello from a function"
-message = get_greeting()
-print(message)
-
-
-def fahrenheit_to_celsius(fahrenheit):
-  return (fahrenheit - 32) * 5 / 9
-print(fahrenheit_to_celsius(77))
-print(fahrenheit_to_celsius(95))
-print(fahrenheit_to_celsius(50))
 
 
 
-def get_greeting():
-  return "Hello from a function"
-print(get_greeting())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

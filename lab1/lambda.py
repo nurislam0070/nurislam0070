@@ -41,7 +41,9 @@
 # d = dict(zip(keys, values))
 # print(d.get(query, "Not found"))
 
-n = int(input())
-nums = map(int, input().split())
+# n = int(input())
+# nums = map(int, input().split())
 
-print(sum(map(bool, nums)))
+# print(sum(map(bool, nums)))
+
+print({'a':1}.get('b',0))
