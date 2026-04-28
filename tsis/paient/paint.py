@@ -79,6 +79,26 @@ def main():
         "  1/2/3 = Brush size\n"
         "  Ctrl+S = Save PNG"
     )
+    
+    help_lines = [
+    "H - Toggle help",
+    "L - Freehand line",
+    "N - Straight line",
+    "Z - Rectangle",
+    "X - Circle",
+    "Q - Square",
+    "W - Right triangle",
+    "E - Equilateral triangle",
+    "R - Rhombus",
+    "F - Flood fill",
+    "T - Text tool",
+    "C - Eraser",
+    "A - Clear",
+    "1/2/3 - Brush size",
+    "Ctrl+S - Save"
+    ]
+
+    show_help = False
 
     r_btn = pygame.Rect(30, 320, 30, 30)
     g_btn = pygame.Rect(30, 370, 30, 30)
@@ -138,6 +158,11 @@ def main():
                 elif event.key == pygame.K_3:
                     brush_idx = 2
 
+                #List
+                elif event.key == pygame.K_h:
+                    show_help = not show_help
+                
+                
                 # Toggle drawing on/off
                 elif event.key == pygame.K_p:
                     drawing = not drawing
@@ -254,7 +279,7 @@ def main():
 
         # Blit canvas onto screen (canvas is never wiped — all drawing is permanent)
         screen.blit(canvas, (0, 0))
-
+        font = pygame.font.SysFont(None, 24)
         # --- Draw ONLY the live in-progress shape preview on top of screen ---
         if drawing:
             if drawing_mode == 1:
@@ -264,14 +289,22 @@ def main():
                 s, e = figures[0]
                 drawfig(screen, 0, s, e, radius, mode, drawing_mode)
 
-        font = pygame.font.SysFont(None, 24)
-        for line_idx, line in enumerate(text.splitlines()):
-            rendered = font.render(line, True, (255, 255, 255))
-            screen.blit(rendered, (0, line_idx * 20))
+        if show_help:
+                font = pygame.font.SysFont(None, 28)
+
+                pygame.draw.rect(screen, (20, 20, 20), (200, 50, 400, 400))
+
+                title = font.render("HELP MENU", True, (255, 200, 0))
+                screen.blit(title, (220, 60))
+
+                for i, line in enumerate(help_lines):
+                    txt = font.render(line, True, (255, 255, 255))
+                    screen.blit(txt, (220, 100 + i * 25))
 
         # show active brush size ---
         brush_lbl = font.render(f"  Brush: {BRUSH_SIZES[brush_idx]}px", True, (255, 220, 80))
-        screen.blit(brush_lbl, (0, len(text.splitlines()) * 20 + 4))
+        if not show_help:
+            screen.blit(brush_lbl, (0, len(text.splitlines()) * 20 + 4))
 
         # live text preview while typing ---
         if text_active:
@@ -282,6 +315,18 @@ def main():
         pygame.draw.rect(screen, (0, 0, 255), b_btn)
         pygame.draw.rect(screen, (255, 0, 0), r_btn)
         pygame.draw.rect(screen, (0, 255, 0), g_btn)
+        if show_help:
+            font = pygame.font.SysFont(None, 28)
+
+            pygame.draw.rect(screen, (20, 20, 20), (200, 50, 400, 400))
+
+            title = font.render("HELP MENU", True, (255, 200, 0))
+            screen.blit(title, (220, 60))
+
+            for i, line in enumerate(help_lines):
+                txt = font.render(line, True, (255, 255, 255))
+                screen.blit(txt, (220, 100 + i * 25))
+        
 
         pygame.display.flip()
         clock.tick(60)
