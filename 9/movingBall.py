@@ -11,7 +11,7 @@ RED = (255,0,0)
 
 x, y = 400, 300
 radius = 25
-speed = 20
+speed = 40
 
 clock = pygame.time.Clock()
 

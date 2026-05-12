@@ -9,8 +9,8 @@ WHITE = (255, 255, 255)
 base = r'C:\Users\admin\Downloads'
 image_surface = pygame.image.load(os.path.join(base, 'clock.png')).convert_alpha()
 mickey      = pygame.image.load(os.path.join(base, 'mUmrP.png')).convert_alpha()
-hand_l      = pygame.image.load(os.path.join(base, 'hand_left_centered.png')).convert_alpha()
-hand_r      = pygame.image.load(os.path.join(base, 'hand_right_centered.png')).convert_alpha()
+hand_l      = pygame.image.load(os.path.join(base, 'left_hand.png')).convert_alpha()
+hand_r      = pygame.image.load(os.path.join(base, 'right_hand.png')).convert_alpha()
 
 resized_image = pygame.transform.scale(image_surface, (800, 600))
 res_mickey    = pygame.transform.scale(mickey, (350, 350))
@@ -35,16 +35,16 @@ while not done:
     m = now.minute
     s = now.second
 
-    minutes_angle = -(m * 6 + s * 0.1)        
-    hours_angle   = -(s * 6 + m * 0.5)       
+    minutes_angle = -(m * 6)
+    seconds_angle = -(s * 6)       
 
 
     rotated_minutes = pygame.transform.rotate(hand_l_base, minutes_angle)
-    rotated_hours   = pygame.transform.rotate(hand_r_base, hours_angle)
+    rotated_hours   = pygame.transform.rotate(hand_r_base, seconds_angle)
 
 
-    minutes_rect = rotated_minutes.get_rect(center=(600, 340))
-    hours_rect   = rotated_hours.get_rect(center=(600,340))
+    minutes_rect = rotated_minutes.get_rect(center=(600, 320))
+    hours_rect   = rotated_hours.get_rect(center=(600,320))
 
     screen.fill(WHITE)
 

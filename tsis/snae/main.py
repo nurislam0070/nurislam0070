@@ -193,7 +193,7 @@ def game_over_screen(score, level, personal_best):
         ]):
             s = font.render(text, True, colorWHITE)
             screen.blit(s, s.get_rect(center=(WIDTH // 2, 250 + i * 40)))
-        draw_button("Retry",     retry_btn, hover=retry_btn.collidepoint(mx, my))
+        draw_button("Try again",     retry_btn, hover=retry_btn.collidepoint(mx, my))
         draw_button("Main Menu", menu_btn,  hover=menu_btn.collidepoint(mx, my))
         pygame.display.flip()
         for event in pygame.event.get():

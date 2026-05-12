@@ -1,22 +1,62 @@
 [
   {
-    "username": "Aigerim",
-    "email": "aigerim@mail.ru",
-    "birthday": "1995-08-22",
-    "group": "Family",
-    "phones": [
-      {
-        "phone": "+777123456",
-        "type": "work"
-      }
-    ]
-  },
-  {
     "username": "Alihan",
     "email": "alihan@gmail.com",
     "birthday": "1990-05-15",
-    "group": "Friend",
+    "group": "Family",
     "phones": [
+      {
+        "phone": "+9814512",
+        "type": "mobile"
+      },
+      {
+        "phone": "+9814512",
+        "type": "mobile"
+      },
+      {
+        "phone": "+9814512",
+        "type": "mobile"
+      },
+      {
+        "phone": "+9814512",
+        "type": "mobile"
+      },
+      {
+        "phone": "+9814512",
+        "type": "mobile"
+      },
+      {
+        "phone": "+9814512",
+        "type": "mobile"
+      },
+      {
+        "phone": "+9814512",
+        "type": "mobile"
+      },
+      {
+        "phone": "+9814512",
+        "type": "mobile"
+      },
+      {
+        "phone": "+9814512",
+        "type": "mobile"
+      },
+      {
+        "phone": "+9814512",
+        "type": "mobile"
+      },
+      {
+        "phone": "+9814512",
+        "type": "mobile"
+      },
+      {
+        "phone": "+9814512",
+        "type": "mobile"
+      },
+      {
+        "phone": "+9814512",
+        "type": "mobile"
+      },
       {
         "phone": "+9814512",
         "type": "mobile"
@@ -32,6 +72,54 @@
       {
         "phone": "+99594",
         "type": "work"
+      },
+      {
+        "phone": "+99594",
+        "type": "work"
+      },
+      {
+        "phone": "+99594",
+        "type": "work"
+      },
+      {
+        "phone": "+99594",
+        "type": "work"
+      },
+      {
+        "phone": "+99594",
+        "type": "work"
+      },
+      {
+        "phone": "+99594",
+        "type": "work"
+      },
+      {
+        "phone": "+99594",
+        "type": "work"
+      },
+      {
+        "phone": "+99594",
+        "type": "work"
+      },
+      {
+        "phone": "+99594",
+        "type": "work"
+      },
+      {
+        "phone": "+99594",
+        "type": "work"
+      },
+      {
+        "phone": "+99594",
+        "type": "work"
+      },
+      {
+        "phone": "+99594",
+        "type": "work"
+      },
+      {
+        "phone": "+99594",
+        "type": "work"
       }
     ]
   },
@@ -39,8 +127,60 @@
     "username": "Bob",
     "email": "bob@gmail.com",
     "birthday": "1988-03-10",
-    "group": "Work",
+    "group": null,
     "phones": [
+      {
+        "phone": "+123456789",
+        "type": "home"
+      },
+      {
+        "phone": "+123456789",
+        "type": "home"
+      },
+      {
+        "phone": "+123456789",
+        "type": "home"
+      },
+      {
+        "phone": "+123456789",
+        "type": "home"
+      },
+      {
+        "phone": "+123456789",
+        "type": "home"
+      },
+      {
+        "phone": "+123456789",
+        "type": "home"
+      },
+      {
+        "phone": "+123456789",
+        "type": "home"
+      },
+      {
+        "phone": "+123456789",
+        "type": "home"
+      },
+      {
+        "phone": "+123456789",
+        "type": "home"
+      },
+      {
+        "phone": "+123456789",
+        "type": "home"
+      },
+      {
+        "phone": "+123456789",
+        "type": "home"
+      },
+      {
+        "phone": "+123456789",
+        "type": "home"
+      },
+      {
+        "phone": "+123456789",
+        "type": "home"
+      },
       {
         "phone": "+123456789",
         "type": "home"
@@ -51,8 +191,60 @@
     "username": "Charlie",
     "email": "charlie@outlook.com",
     "birthday": null,
-    "group": "Other",
+    "group": null,
     "phones": [
+      {
+        "phone": "+987654321",
+        "type": "mobile"
+      },
+      {
+        "phone": "+987654321",
+        "type": "mobile"
+      },
+      {
+        "phone": "+987654321",
+        "type": "mobile"
+      },
+      {
+        "phone": "+987654321",
+        "type": "mobile"
+      },
+      {
+        "phone": "+987654321",
+        "type": "mobile"
+      },
+      {
+        "phone": "+987654321",
+        "type": "mobile"
+      },
+      {
+        "phone": "+987654321",
+        "type": "mobile"
+      },
+      {
+        "phone": "+987654321",
+        "type": "mobile"
+      },
+      {
+        "phone": "+987654321",
+        "type": "mobile"
+      },
+      {
+        "phone": "+987654321",
+        "type": "mobile"
+      },
+      {
+        "phone": "+987654321",
+        "type": "mobile"
+      },
+      {
+        "phone": "+987654321",
+        "type": "mobile"
+      },
+      {
+        "phone": "+987654321",
+        "type": "mobile"
+      },
       {
         "phone": "+987654321",
         "type": "mobile"
@@ -63,11 +255,87 @@
     "username": "Dana",
     "email": "dana@company.kz",
     "birthday": "2000-12-01",
-    "group": "Work",
+    "group": null,
     "phones": [
       {
         "phone": "+555666777",
         "type": "work"
+      },
+      {
+        "phone": "+555666777",
+        "type": "work"
+      },
+      {
+        "phone": "+555666777",
+        "type": "work"
+      },
+      {
+        "phone": "+555666777",
+        "type": "work"
+      },
+      {
+        "phone": "+555666777",
+        "type": "work"
+      },
+      {
+        "phone": "+555666777",
+        "type": "work"
+      },
+      {
+        "phone": "+555666777",
+        "type": "work"
+      },
+      {
+        "phone": "+555666777",
+        "type": "work"
+      },
+      {
+        "phone": "+555666777",
+        "type": "work"
+      },
+      {
+        "phone": "+555666777",
+        "type": "work"
+      },
+      {
+        "phone": "+555666777",
+        "type": "work"
+      },
+      {
+        "phone": "+555666777",
+        "type": "work"
+      },
+      {
+        "phone": "+555666777",
+        "type": "work"
+      },
+      {
+        "phone": "+555666777",
+        "type": "work"
+      }
+    ]
+  },
+  {
+    "username": "errrr",
+    "email": null,
+    "birthday": null,
+    "group": null,
+    "phones": [
+      {
+        "phone": "8496655",
+        "type": "mobile"
+      }
+    ]
+  },
+  {
+    "username": "lox",
+    "email": null,
+    "birthday": null,
+    "group": null,
+    "phones": [
+      {
+        "phone": "87654321",
+        "type": "mobile"
       }
     ]
   },
@@ -83,6 +351,118 @@
       },
       {
         "phone": "+66211425",
+        "type": "home"
+      },
+      {
+        "phone": "+65954",
+        "type": "mobile"
+      },
+      {
+        "phone": "+66211425",
+        "type": "home"
+      },
+      {
+        "phone": "+65954",
+        "type": "mobile"
+      },
+      {
+        "phone": "+66211425",
+        "type": "home"
+      },
+      {
+        "phone": "+65954",
+        "type": "mobile"
+      },
+      {
+        "phone": "+66211425",
+        "type": "home"
+      },
+      {
+        "phone": "+65954",
+        "type": "mobile"
+      },
+      {
+        "phone": "+66211425",
+        "type": "home"
+      },
+      {
+        "phone": "+65954",
+        "type": "mobile"
+      },
+      {
+        "phone": "+66211425",
+        "type": "home"
+      },
+      {
+        "phone": "+65954",
+        "type": "mobile"
+      },
+      {
+        "phone": "+66211425",
+        "type": "home"
+      },
+      {
+        "phone": "+65954",
+        "type": "mobile"
+      },
+      {
+        "phone": "+66211425",
+        "type": "home"
+      },
+      {
+        "phone": "+65954",
+        "type": "mobile"
+      },
+      {
+        "phone": "+66211425",
+        "type": "home"
+      },
+      {
+        "phone": "+65954",
+        "type": "mobile"
+      },
+      {
+        "phone": "+66211425",
+        "type": "home"
+      },
+      {
+        "phone": "+65954",
+        "type": "mobile"
+      },
+      {
+        "phone": "+66211425",
+        "type": "home"
+      },
+      {
+        "phone": "+65954",
+        "type": "mobile"
+      },
+      {
+        "phone": "+66211425",
+        "type": "home"
+      },
+      {
+        "phone": "+65954",
+        "type": "mobile"
+      },
+      {
+        "phone": "+66211425",
+        "type": "home"
+      }
+    ]
+  },
+  {
+    "username": "Seka",
+    "email": null,
+    "birthday": null,
+    "group": null,
+    "phones": [
+      {
+        "phone": "+46235465",
+        "type": "home"
+      },
+      {
+        "phone": "51635126",
         "type": "home"
       }
     ]

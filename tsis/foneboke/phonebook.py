@@ -180,7 +180,7 @@ def move_to_group():
 # ── 7. QUERY  (from Practice 7 + sort) ───────────────────────────────────────
 
 def query_contacts():
-    print("DEBUG WORKS")
+    
     print("Filter:  1.Name  2.Phone prefix  3.Email")
     mode = input("Choice: ").strip()
 
@@ -219,7 +219,7 @@ def query_contacts():
 
         if rows:
             for r in rows:
-                print_row(r)
+                print(r)
         else:
             print("No results")
 
@@ -260,7 +260,8 @@ def filter_by_group():
                 rows = cur.fetchall()
 
         if rows:
-            for r in rows: print_row(r)
+            for r in rows: 
+                print_row(r)
         else:
             print("No contacts in that group.")
     except Exception as e:
@@ -414,6 +415,9 @@ def csv_import():
 # ── 13. EXPORT JSON  (new) ────────────────────────────────────────────────────
 
 def export_json():
+    
+    
+    
     """Export all contacts to a JSON file."""
     path = input("Output file [contacts.json]: ").strip() or "contacts.json"
     try:
